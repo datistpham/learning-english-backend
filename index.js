@@ -51,7 +51,7 @@ if (!dev) {
 
 // ================== Connect mongodb with mongoose ==================
 const mongoose = require('mongoose');
-const MONGO_URL = dev ? 'mongodb://localhost:27017' : 'mongodb://localhost:27017';
+const MONGO_URL = dev ? 'mongodb+srv://giang:giang@cluster0.pffyt.mongodb.net/?retryWrites=true&w=majority' : 'mongodb+srv://giang:giang@cluster0.pffyt.mongodb.net/?retryWrites=true&w=majority';
 
 mongoose.connect(MONGO_URL, {
   useUnifiedTopology: true,
